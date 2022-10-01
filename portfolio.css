@@ -1,0 +1,281 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: black;
+}
+
+/* For Front Page section1 */
+
+#section1{
+    height: 100vh;
+    width: 100%;
+}
+.logo{
+    font-size: 35px;
+    letter-spacing: 2px;
+    color: rgb(220, 216, 216);
+    cursor: pointer;
+}
+span{
+    color: darkred;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 21px;
+    padding-left: 5%;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+nav ul li{
+    list-style: none;        /* for remove the dots */
+    display: block;
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding: 9px 18px;
+}
+nav ul li a{
+    text-decoration: none;    /* for remove the underline */
+    color: rgb(220, 216, 216);
+    font-weight: bold;
+}
+nav ul li a:hover{
+    cursor: pointer;
+    color: darkred;
+    transition: 0.7s;
+}
+.intro{
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    /* color: white; */
+    color: rgb(218, 215, 215);
+}
+h1{
+    margin: 12px 0px 12px;
+    font-size: 58px;
+    letter-spacing: 2px;
+    /* color: white; */
+}
+h4{
+    font-style: italic;
+    font-size: 21px;
+    letter-spacing: 3px;
+}
+h5{ 
+    font-style: italic;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+/* Start About Section */
+
+.section2{
+    /* background: black; */
+    width: 100%;
+    padding: 100px;
+}
+.section2 img{
+    height: 400px;
+    width: 320px;
+    border-radius: 35px;
+    transition: transform 0.7s;
+}
+.section2 img:hover{
+    transform: translateY(-20px);
+    cursor: pointer;
+}
+#content{
+    color: rgb(220, 216, 216);
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about{
+    /* width: 750px; */
+    text-align: center;
+}
+.about h2{
+    font-size: 42px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.about h5{
+    font-size: 22px;
+    letter-spacing: 2px;
+    margin-bottom: 35px;
+}
+.about p{
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    color: rgb(197, 194, 194);
+    margin-left: 9%;
+    margin-right: 9%;
+}
+
+/* Start Education & Skill Section */
+
+#section3{
+    padding: 100px;
+}
+.container h2{
+    font-size: 37px;
+    padding-bottom: 4%;
+    letter-spacing: 3px;
+    color: rgb(220, 216, 216);
+    text-align: center;
+}
+.list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+    grid-gap: 42px;
+    margin-top: 40px;
+}
+.list div{
+    background: #511226;
+    border-radius: 35px;
+    padding: 40px;
+    padding-left: 55px;
+    font-size: 21px;
+    transition: transform 0.5s;
+}
+.list div:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+.subtil{
+    background: #511226;
+    color: rgb(173, 167, 167);
+    font-weight: bolder;
+    letter-spacing: 2px;
+    line-height: 25px;
+}
+.para{
+    background: #511226;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    line-height: 35px;
+}
+.cont{
+    background: #511226;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    line-height: 35px;
+}
+
+/* Start My work Section */
+
+#work{
+    width: 100%;
+    padding: 100px;
+}
+.section4 img{
+    border-radius: 25px;
+    height: 320px;
+    width: 250px;
+    display: block;
+    transition: transform 0.5s;
+}
+.section4 img:hover{
+    cursor: pointer;
+    transform: translateY(-10px);
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+    grid-gap: 42px;
+    margin-top: 40px;
+    padding: 35px;
+}
+.projects{
+    position: relative;
+}
+.layer{
+    width: 100%;
+    height: 100%;
+}
+.layer p{
+    color: rgb(220, 216, 216);
+    text-align: center;
+    line-height: 32px;
+}
+.layer a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color: rgb(220, 216, 216);
+    border: 1.5px solid #6c2038;
+    border-radius: 50px;
+    padding: 6px;
+    margin: 45px;
+    transition: transform 0.5s;
+}
+.layer a:hover{
+    cursor: pointer;
+    background: #6e1833;
+    transform: translateY(-10);
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1.5px solid #6c2038;
+    padding: 14px 35px;
+    border-radius: 7px;
+    text-decoration: none;
+    color: rgb(220, 216, 216);
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: #6e1833;
+    cursor: pointer;
+    transform: translateY(-5);
+}
+
+/* Start Contact Work */
+
+.section5{
+    position: absolute;
+    width: 100%;
+    color: rgb(220, 216, 216);
+}
+.contact{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+    grid-gap: 32px;
+    margin-top: 100px;
+    margin-right: 60px;
+}
+.contact p{
+    margin-top: 20px;
+    margin-left: 30%;
+}
+.git{
+    margin-left: 30%;
+    text-decoration: none;
+    color: rgb(220, 216, 216);
+    padding: 6px 9px;
+    border-radius: 7px;
+    transition: background 0.5s;
+}
+.git:hover{
+    background: #6e1833;
+    cursor: pointer;
+    transform: translateY(-5);
+}
+form input, form textarea{
+    width: 100%;
+    outline: none;
+    padding: 9px;
+    margin: 8px;
+    border-radius: 7px;
+    background: #524f4f;
+}
